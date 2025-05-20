@@ -15,17 +15,17 @@ public struct MediaItemProduct: Decodable {
 }
 
 public struct SpatialTag: Decodable {
-    let x: Float
-    let y: Float
-    let label: String
+    public let x: Float
+    public let y: Float
+    public let label: String
 }
 
 public struct Price: Decodable {
-    let display: String
-    let value: Decimal?
-    let currencySymbol: String?
-    let currencyCode: String?
-    let saleValue: Decimal?
-    let saleDisplay: String?
-    let isOnSale: Bool?
+    public let display: String
+    public let value: Decimal?
+    public let currencySymbol: String?
+    public let currencyCode: String?
+    public let saleValue: Decimal?
+    public let saleDisplay: String?
+    public let isOnSale: Bool?
 }
