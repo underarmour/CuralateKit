@@ -20,6 +20,17 @@ public struct GetMediaResponse: Decodable {
 public struct GetMediaResponseData: Decodable {
     public let items: [MediaItem]
     public let resultsCount: Int
+
+    enum CodingKeys: String, CodingKey {
+        case items
+        case resultsCount
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        items = try container.decode([FailableDecodable<MediaItem>].self, forKey: .items).compactMap(\.base)
+        resultsCount = try container.decode(Int.self, forKey: .resultsCount)
+    }
 }
 
 public struct GetMediaResponseMetadata: Decodable {

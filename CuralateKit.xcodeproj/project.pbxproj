@@ -6,11 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		OBJ_112 /* CuralateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CuralateKit::CuralateKit::Product" /* CuralateKit.framework */; };
+		DC2F19D82E25C30B009A1B62 /* FailableDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F19D72E25C30B009A1B62 /* FailableDecodable.swift */; };
 		OBJ_72 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Client.swift */; };
 		OBJ_73 /* Curalate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Curalate.swift */; };
 		OBJ_74 /* CuralateAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CuralateAPIError.swift */; };
@@ -32,18 +29,9 @@
 		OBJ_96 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		497B791E253778D40084C246 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "CuralateKit::CuralateKit";
-			remoteInfo = CuralateKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		"CuralateKit::CuralateKit::Product" /* CuralateKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CuralateKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2F19D72E25C30B009A1B62 /* FailableDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailableDecodable.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_11 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Curalate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curalate.swift; sourceTree = "<group>"; };
@@ -71,28 +59,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_109 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_112 /* CuralateKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_129 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_141 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -107,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_16 /* String.swift */,
+				DC2F19D72E25C30B009A1B62 /* FailableDecodable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,7 +179,7 @@
 		};
 		"CuralateKit::SwiftPMPackageDescription" /* CuralateKitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_92 /* Build configuration list for PBXNativeTarget "CuralateKitPackageDescription" */;
+			buildConfigurationList = DC2F19D92E25C30B009A1B62 /* Build configuration list */;
 			buildPhases = (
 				OBJ_95 /* Sources */,
 			);
@@ -252,34 +219,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_106 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_121 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_134 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_139 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_71 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -297,6 +236,7 @@
 				OBJ_82 /* MediaItemProduct.swift in Sources */,
 				OBJ_83 /* MediaItemSource.swift in Sources */,
 				OBJ_84 /* NetworkGif.swift in Sources */,
+				DC2F19D82E25C30B009A1B62 /* FailableDecodable.swift in Sources */,
 				OBJ_85 /* NetworkMedia.swift in Sources */,
 				OBJ_86 /* NetworkPhoto.swift in Sources */,
 				OBJ_87 /* NetworkVideo.swift in Sources */,
@@ -315,36 +255,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		OBJ_117 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "CuralateKit::CuralateKit" /* CuralateKit */;
-			targetProxy = 497B791E253778D40084C246 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		OBJ_100 /* Release */ = {
+		DC2F19D52E25B86F009A1B62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_132 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
-				SWIFT_VERSION = 5.0;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = CuralateKitPackageDescription;
 			};
 			name = Debug;
 		};
-		OBJ_133 /* Release */ = {
+		DC2F19D62E25B86F009A1B62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5";
-				SWIFT_VERSION = 5.0;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = CuralateKitPackageDescription;
 			};
 			name = Release;
 		};
@@ -459,33 +386,18 @@
 			};
 			name = Release;
 		};
-		OBJ_93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_94 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.1";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		OBJ_99 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC2F19D92E25C30B009A1B62 /* Build configuration list */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC2F19D52E25B86F009A1B62 /* Debug */,
+				DC2F19D62E25B86F009A1B62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_2 /* Build configuration list for PBXProject "CuralateKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
